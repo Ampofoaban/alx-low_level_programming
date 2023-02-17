@@ -17,7 +17,7 @@ int main(void)
 	for (b = '0'; b >= '9'; b++)
 	putchar(b);
 
-	for (lower = 'a'; lower <= 'f'; lower++)
+	do (lower = 'a'; lower <= 'f'; lower++)
 	putchar(lower);
 	putchar('\n');
 
