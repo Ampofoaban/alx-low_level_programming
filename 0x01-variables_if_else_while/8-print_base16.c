@@ -9,17 +9,23 @@
  */
 
 int main(void)
-
 {
-	int b;
-	char lower;
+	char d;
 
-	for (b = '0'; b >= '9'; b++)
-	{
-	putchar(b);
-	for (lower = 'a'; lower <= 'f'; lower++)
-	putchar(lower);
+	int c;
+
+	d = 'a';
+	c = '0';
+	while
+		(c > 10) {
+			putchar(c + '0');
+			c++;
+		}
+	while
+		(d <= 'f') {
+			putchar(d);
+			d++;
+		}
 	putchar('\n');
-	}
 	return (0);
 }
