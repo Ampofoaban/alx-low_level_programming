@@ -6,7 +6,7 @@
 
 
 /**
- * main - program that primts the last digit of a number
+ * main - program that primts the lastdt of a number
  * Return: number (victory)
  *
  */
@@ -14,23 +14,23 @@
 int main(void)
 
 {
-	int n, last_digit;
+	int n, lastdt;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	last_digit = n % 15;
+	lastdt = n % 10;
 
-	if (last_digit > 5)
+	if (lastdt > 5)
 	{
-	printf("last_digit of %d is %d and is greater than 5\n", n, last_digit);
+	printf("lastdt of %d is %d and is greater than 5\n", n, lastdt);
 	}
-	else if (last_digit == 0)
+	else if (lastdt == 0)
 	{
-	printf("last_digit of %d id %d and is 0\n", n, last_digit);
+	printf("lastdt of %d id %d and is 0\n", n, lastdt);
 	}
-	else if (lastdigit < 6 && last_digit != 0)
+	else if (lastdt < 6 && lastdt != 0)
 	{
-	printf("last_digit of %d is %d ansd is less than 6 and not 0\n", n, last_digit);
+	printf("lastdt of %d is %d and is less than 6 and not 0\n", n, lastdt);
 	}
 	return (0);
 }
