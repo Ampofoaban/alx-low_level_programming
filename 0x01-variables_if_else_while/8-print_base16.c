@@ -11,7 +11,6 @@
 int main(void)
 
 {
-	
 	int b;
 	char lower;
 
