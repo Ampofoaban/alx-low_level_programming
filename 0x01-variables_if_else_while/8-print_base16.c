@@ -15,11 +15,11 @@ int main(void)
 	char lower;
 
 	for (b = '0'; b >= '9'; b++)
+	{
 	putchar(b);
-
-	do (lower = 'a'; lower <= 'f'; lower++)
+	for (lower = 'a'; lower <= 'f'; lower++)
 	putchar(lower);
 	putchar('\n');
-
+	}
 	return (0);
 }
