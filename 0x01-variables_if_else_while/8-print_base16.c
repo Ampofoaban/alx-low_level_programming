@@ -5,27 +5,21 @@
 /**
  * main -  program that prints all the numbers of base 16 in lowercase
  * Return: number 0 (victory)
- *
  */
-
 int main(void)
 {
-	char d;
+	char c;
+	int i;
 
-	int c;
-
-	d = 'a';
-	c = 0;
-	while
-		(c > 10) {
-			putchar(c + '0');
-			c++;
-		}
-	while
-		(d <= 'f') {
-			putchar(d);
-			d++;
-		}
+	for (i = 0; i < 10; i++)
+	{
+		putchar(i + '0');
+	}
+	for (c = 'a'; c < 'g'; c++)
+	{
+		putchar(c);
+	}
 	putchar('\n');
+
 	return (0);
 }
