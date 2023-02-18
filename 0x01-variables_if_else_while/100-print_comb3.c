@@ -4,30 +4,34 @@
 
 /**
  * main - entry point
- * Return: always (victory)
+ * Return: 0
  */
-
 int main(void)
-
 {
+	int i, j, k;
 
-	int d, p;
+	i = 0;
 
-	for (d = '0'; d < '9'; d++)
+	while (i < 100)
 	{
-	putchar(d);
-	for (p = d + 1; p <= 9; p++)
-	{
-	if (p != d)
-	{
-	putchar(p);
-	if (d == '8' && p == '9')
-	continue;
-	putchar(',');
-	putchar(' ');
-	}
-	}
+		j = i % 10; /* singles digit */
+		k = i / 10; /* doubles digit */
+
+		if (k < j)
+		{
+			putchar(k + '0');
+			putchar(j + '0');
+
+			if (i < 89)
+			{
+				putchar(44);
+				putchar(32);
+			}
+		}
+
+		i++;
 	}
 	putchar('\n');
+
 	return (0);
 }
