@@ -3,7 +3,7 @@
 /**
  * main - entry point
  * Description: print _putchar
- * Returns: 0 (victory)
+ * Return: 0 (victory)
  */
 
 int main(void)
