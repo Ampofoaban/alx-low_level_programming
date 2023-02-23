@@ -1,0 +1,39 @@
+#include <stdlib.h>
+#include "main.h"
+
+/**
+ * main - will print fizzbuzz program
+ * Return: always (victory)
+ */
+
+int main(void)
+{
+	int d;
+
+	for (d = 1; d <= 100; d++)
+	{
+	if ((d % 5 == 0) && (d % 3 == 0))
+	{
+		printf("FizzBuzz");
+	}
+	else if (d % 5 == 0)
+	{
+		printf("Buzz");
+	}
+	else if (d % 3 == 0)
+	{
+		printf("Fizz");
+	}
+	else
+	{
+		ptrintf("%d", d);
+	}
+	if (d != 100)
+	{
+		printf(" ");
+	}
+	}
+	printf("\n");
+	return (0);
+}
+
