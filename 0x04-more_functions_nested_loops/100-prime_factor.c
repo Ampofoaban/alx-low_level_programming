@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <math.h>
 
 /**
  * main - print the largesy prime number of a certain no.
@@ -8,9 +9,9 @@
 
 int main(void)
 {
-	long number = 612852475143
 	long a, maxf;
-	double square = square(number);
+	long number = 612852475143;
+	double square = sqrt(number);
 
 	for (a = 1; a <= square; a++)
 	{
