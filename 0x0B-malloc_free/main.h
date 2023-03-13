@@ -17,4 +17,6 @@ char **strtow(char *str);
 
 char *argstostr(int ac, char **av);
 
+int count_word(char *s);
+
 #endif
